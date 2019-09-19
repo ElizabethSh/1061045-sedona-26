@@ -12,7 +12,7 @@
 <body>
 
   <!--  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-  <header>
+  <header class="main-header">
     <a>
       <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
     </a>
@@ -26,7 +26,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">SEDONA</h1>
     <div class="intro-slide">
       <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona">
@@ -87,7 +87,7 @@
       <p class="booking-header">Заинтересовались?</p>
       <p class="booking-desc">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <button class="button button-braun" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       <form action="https://echo.htmlacademy.ru" method="get">
         <p>
           <label for="filter-check-in-date">Дата заезда:</label>
@@ -105,7 +105,7 @@
           <label for="filter-children-amount">Дети:</label>
           <input id="filter-children-amount" type="number" name="children-amount" placeholder="0">
         </p>
-        <button type="submit">Найти</button>
+        <button class="button button-blue" type="submit">Найти</button>
       </form>
     </section>
 

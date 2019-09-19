@@ -6,11 +6,15 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
+}
+
+.main-header {
+  background-color: #ffffff;
 }
 
 .main-navigation {
@@ -32,6 +36,21 @@ a {
 
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  background-color: #ffffff;
 }
 
 .intro-slide {
@@ -65,18 +84,106 @@ a {
   text-align: center;
 }
 
+.filter-search {
+  background-color: #a9a9a9;
+  background-image: url(../img/filter-background.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+.filter-search ul {
+  list-style: none;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-item h3 {
+  color: #000000;
+}
+
+.catalog-item h3:hover,
+.catalog-item h3:focus {
+  color: #81b3d2;
+}
+
+.catalog-item h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item-type,
+.catalog-item-price {
+  color: #333333;
+}
+
+.catalog-item-rating {
+  color: #666666;
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+.button {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  background-color:#5496bd;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-braun {
+  background-color: #766357;
+}
+
+.button-braun:hover,
+.button-braun:focus {
+  background-color: #604e43;
+}
+
+.button-braun:active {
+  background-color: #503e33;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .main-footer {
-  opacity: 0.9;
+  background-color: rgb(255, 255, 255, 0.9)
 }
 
 .footer-link {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .footer-link a {
   color: #000000;
+}
+
+.footer-social {
+  text-align: center;
 }
 
 .footer-social ul {
@@ -85,4 +192,8 @@ a {
 
 .social-button {
   color: #000000;
+}
+
+.footer-copyright {
+  text-align: center;
 }
