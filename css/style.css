@@ -51,6 +51,9 @@ a {
 
 .container {
   background-color: #ffffff;
+
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .intro-slide {
@@ -167,8 +170,14 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer {
-  background-color: rgb(255, 255, 255, 0.9)
+.main-footer .container {
+  background-color: rgb(255, 255, 255, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 35px;
 }
 
 .footer-link {
@@ -176,6 +185,10 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
+  margin: 0;
+  width: 130px;
+  margin-left: 130px;
 }
 
 .footer-link a {
@@ -184,6 +197,8 @@ a {
 
 .footer-social {
   text-align: center;
+
+  width: 150px;
 }
 
 .footer-social ul {
@@ -195,5 +210,6 @@ a {
 }
 
 .footer-copyright {
-  text-align: center;
+  margin: 0;
+  margin-right: 100px;
 }
