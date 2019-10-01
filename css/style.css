@@ -353,6 +353,10 @@ img {
   position: 0 0;
 }
 
+.filter-input-checkbox:checked + label::before {
+  display: none;
+}
+
 .filter-range {
   margin: 0;
   width: 320px;
@@ -475,6 +479,81 @@ img {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.filter-results {
+  padding: 32px 70px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-results-title {
+  margin: 0;
+  margin-right: 46px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.filter-results-sort {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.result-sort-list {
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+}
+
+.result-sort-list a {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.result-sort-list a:hover,
+.result-sort-list a:focus {
+  color: #81b3d2;
+}
+
+.result-sort-list a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sort-buttons {
+  margin-left: auto;
+}
+
+.sort-buttons button {
+  padding: 0;
+  width: 19px;
+  height: 19px;
+
+  color: #cacaca;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.sort-buttons button:hover,
+.sort-buttons button:focus {
+  color: #000000;
+}
+
+.sort-buttons button:active {
+  color: #81b3d2;
 }
 
 .catalog {
