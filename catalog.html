@@ -90,13 +90,17 @@
       <p class="filter-results-title">Найдено: 3</p>
       <p class="filter-results-sort">Сортировка:</p>
       <ul class="result-sort-list">
-        <li><a href="">По цене</a></li>
+        <li><a  class="result-sort-current" href="">По цене</a></li>
         <li><a href="">По типу</a></li>
         <li><a href="">По рейтингу</a></li>
       </ul>
       <div class="sort-buttons">
-        <button type="button">&#9650;</button>
-        <button type="button">&#9660;</button>
+        <button type="button">&#9650;
+          <span class="visually-hidden">По возрастанию</span>
+        </button>
+        <button class="result-sort-current" type="button">&#9660;
+          <span class="visually-hidden">По убыванию</span>
+        </button>
       </div>
     </section>
 
