@@ -240,25 +240,124 @@ img {
   margin: 0;
 }
 
-.booking .booking-header {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: center;
+/*BOOKING*/
 
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 35px;
+.booking .booking-header {
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 26px;
 }
 
 .booking .booking-desc {
-  line-height: 24px;
-  text-align: center;
-  width: 450px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+line-height: 24px;
+text-align: center;
+
+width: 450px;
+margin: 0 auto;
+margin-bottom: 48px;
 }
+
+.booking .button {
+margin: 0;
+padding: 0;
+
+font-size: 21px;
+line-height: 26px;
+
+box-sizing: border-box;
+}
+
+.booking .button-braun {
+width: 570px;
+min-height: 86px;
+margin: 0 auto;
+}
+
+.booking-form {
+font-weight: 700;
+line-height: 26px;
+
+width: 570px;
+min-height: 395px;
+margin: 0 auto;
+padding: 55px 55px;
+
+box-sizing: border-box;
+box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.booking-item {
+margin: 0;
+margin-bottom: 30px;
+display: flex;
+justify-content: space-between;
+}
+
+.booking-item label {
+margin: 0;
+padding: 0;
+}
+
+.booking-form input[type="text"] {
+box-sizing: border-box;
+width: 100%;
+padding-right: 40px;
+
+
+font: inherit;
+text-transform: inherit;
+color: #000000;
+
+
+background-color: #f2f2f2;
+border: none;
+
+}
+
+.booking-item input:hover {
+background-color: #ebebeb;
+}
+
+.booking-item input:focus {
+border: solid 2px #e5e5e5;
+background-color: #ffffff;
+}
+
+/*.booking-item:nth-child(1) input,
+.booking-item:nth-child(2) input {
+width: 346px;
+}*/
+
+.booking-item:nth-child(3) input,
+.booking-item:nth-child(4) input {
+width: 112px;
+}
+
+.booking-form .button-blue {
+width: 458px;
+}
+
+.booking .button-blue {
+width: 100%;
+padding-top: 6px;
+padding-bottom: 9px;
+
+}
+
+
+
+
 
 .filter-search {
   background-color: #a9a9a9;
@@ -520,6 +619,10 @@ img {
   text-decoration-style: dotted;
 }
 
+.filter-results .result-sort-current {
+  color: #81b3d2;
+}
+
 .result-sort-list a:hover,
 .result-sort-list a:focus {
   color: #81b3d2;
@@ -680,7 +783,11 @@ img {
   color: #ffffff;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+
   box-sizing: border-box;
+  display: block;
+  border: none;
 }
 
 .button-blue {
