@@ -91,25 +91,25 @@
     <section class="booking">
       <h2 class="visually-hidden">Поиск жилья</h2>
       <p class="booking-header">Заинтересовались?</p>
-      <p class="booking-desc">Укажите предполагаемые даты поездки,
+      <p class="booking-desc">Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="button button-braun" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <p>
+      <form class="booking-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="booking-item">
           <label for="filter-check-in-date">Дата заезда:</label>
           <input id="filter-check-in-date" type="text" name="check-in-date" placeholder="24 апреля 2017">
         </p>
-        <p>
+        <p class="booking-item">
           <label for="filter-check-out-date">Дата выезда:</label>
           <input id="filter-check-out-date" type="text" name="check-out-date" placeholder="4 июля 2017">
         </p>
-        <p>
+        <p class="booking-item">
           <label for="filter-adults-amount">Взрослые:</label>
-          <input id="filter-adults-amount" type="number" name="adults-amount" placeholder="2">
+          <input id="filter-adults-amount" type="text" name="adults-amount" placeholder="2">
         </p>
-        <p>
+        <p class="booking-item">
           <label for="filter-children-amount">Дети:</label>
-          <input id="filter-children-amount" type="number" name="children-amount" placeholder="0">
+          <input id="filter-children-amount" type="text" name="children-amount" placeholder="0">
         </p>
         <button class="button button-blue" type="submit">Найти</button>
       </form>
