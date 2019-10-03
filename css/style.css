@@ -213,14 +213,14 @@ img {
 
 .feature-item-desc p {
   text-align: center;
-  padding: 0 70px;
+  padding: 0 49px;
 }
 
 .main-feature .feature-item-desc {
   background-color: #81b3d2;
 }
 
-.main-feature:first-child .feature-item-desc {
+.feature-item:first-child .feature-item-desc {
   order: -1;
 }
 
