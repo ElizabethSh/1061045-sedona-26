@@ -123,6 +123,7 @@ img {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+
   width: 440px;
   margin-top: 60px;
   margin-left: auto;
@@ -141,6 +142,9 @@ img {
   margin-top: 55px;
   display: flex;
   flex-wrap: wrap;
+
+  list-style: none;
+  counter-reset: li;
 }
 
 .main-feature {
@@ -150,6 +154,37 @@ img {
 
 .main-feature .feature-item-desc {
   color: #ffffff;
+}
+
+.main-feature .feature-item-desc {
+  color: #ffffff;
+}
+
+.feature-item-desc {
+  position: relative;
+}
+
+.feature-item-desc h3:after {
+  content:counter(li);
+  counter-increment: li;
+  content: '\2014' " №" counter(li) ' \2014';
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 55px;
+  height: 25px;
+
+  transform: translate(-50%, -50%);
+
+
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .feature-picture {
