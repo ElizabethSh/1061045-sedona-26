@@ -1,12 +1,16 @@
 body {
   padding: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+
   background-color: #f2f2f2;
+
+  position: relative;
 }
 
 a {
@@ -28,7 +32,7 @@ img {
   width: 244px;
   height: 71px;
   left: 50%;
-  margin-left: -122px;
+  transform: translate(-50%);
 }
 
 .main-navigation {
@@ -282,17 +286,26 @@ img {
 }
 
 .booking-form {
+  background-color: #ffffff;
+
   font-weight: 700;
   line-height: 26px;
+
   width: 570px;
   min-height: 395px;
   margin: 0 auto;
   padding: 48px 55px 55px;
+
   box-sizing: border-box;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .booking-item {
@@ -358,6 +371,11 @@ img {
   width: 100%;
   padding-top: 6px;
   padding-bottom: 9px;
+}
+
+.contacts p {
+  margin: 0;
+  display: flex;
 }
 
 .filter-search {
@@ -828,11 +846,11 @@ img {
   box-sizing: border-box;
 }
 
-.index {
-  position: relative;
+.footer-index {
+  position: absolute;
   left: 50%;
-  margin-left: -600px;
-  bottom: 140px;
+  bottom: 0;
+  transform: translate(-50%);
 }
 
 .footer-link {
