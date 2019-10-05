@@ -1,5 +1,6 @@
 body {
   padding: 0;
+  min-width: 1200px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -9,8 +10,14 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+}
 
+.wrapper {
   position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -95,12 +102,6 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  background-color: #ffffff;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .intro-slide {
@@ -295,7 +296,7 @@ img {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .booking .booking-desc {
@@ -325,11 +326,12 @@ img {
 
   font-weight: 700;
   line-height: 26px;
+  letter-spacing: 0.4px;
 
   width: 570px;
   min-height: 395px;
   margin: 0 auto;
-  padding: 48px 55px 55px;
+  padding: 45px 56px 55px;
 
   box-sizing: border-box;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -345,14 +347,15 @@ img {
 
 .booking-item {
   margin: 0;
-  margin-bottom: 20px;
+  padding: 0;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .booking-item:nth-child(1),
-.booking-item:nth-child(2){
+.booking-item:nth-child(2) {
   width: 100%;
 }
 
@@ -416,14 +419,6 @@ img {
 .filter-search {
   background-color: #a9a9a9;
   background-image: url(../img/filter-background.jpg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  color: #ffffff;
-}
-
-.filter-search {
-  background-color: #a9a9a9;
-  background-image: url(../img/filter-background.jpg);
   background-position: 40% 50%;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -462,7 +457,7 @@ img {
 }
 
 .filter-option {
-  margin-top: 23px;
+  margin-top: 25px;
   padding-left: 40px;
 }
 
@@ -473,33 +468,47 @@ img {
   user-select: none;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
+
   width: 24px;
   height: 24px;
+
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   position: 0 0;
+
   top: 0;
   left: -40px;
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
+
   width: 26px;
   height: 23px;
+
   top: 0;
   left: -40px;
+
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   position: 0 0;
 }
 
-.filter-input-checkbox:checked+label::before {
-  display: none;
-}
+ .filter-input-checkbox:checked + label::before {
+   display: none;
+ }
+
+ .filter-input-checkbox:disabled+label::before {
+     opacity: 0.5;
+   }
+
+ .filter-input-checkbox:disabled+label::after {
+     opacity: 0.5;
+   }
 
 .filter-range {
   margin: 0;
@@ -507,7 +516,7 @@ img {
 }
 
 .filter-range-title {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .price-controls {
@@ -533,7 +542,7 @@ img {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 36px;
+  line-height: 16px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -546,6 +555,7 @@ img {
 
 .price-controls input {
   width: 50px;
+  height: 26px;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -596,8 +606,8 @@ img {
 .button-transparent {
   display: block;
   margin: 0 auto;
-  width: 135px;
-  height: 35px;
+  min-width: 135px;
+  min-height: 35px;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ffffff;
@@ -840,34 +850,30 @@ img {
 
 .item-buttons .button-blue {
   text-align: center;
-  padding-top: 3px;
-  width: 110px;
-  height: 26px;
+  padding: 3px;
+  min-width: 110px;
+  min-height: 26px;
   margin-right: 6px;
   float: left;
   margin-bottom: 2px;
 }
 
 .item-buttons .button-braun {
-  width: 142px;
-  height: 25px;
+  min-width: 142px;
+  min-height: 25px;
   float: left;
   text-align: center;
-  padding-top: 3px;
+  padding: 3px;
   margin-right: 6px;
   margin-bottom: 2px;
-}
-
-.contacts p {
-  margin 0;
-  display: flex;
 }
 
 .main-footer {
   background-color: rgb(255, 255, 255, 0.9);
   min-height: 120px;
-  padding: 5px 0;
+  padding: 0;
   box-sizing: border-box;
+  width: 1200px;
 }
 
 .footer-wrapper {
