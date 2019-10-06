@@ -991,6 +991,8 @@ img {
   70%,
   90% {
     transform: translateX(calc(-50% - 10px));
+    transform: translate(-moz-calc(-50% - 10px));
+    transform: translate(-webkit-calc(-50% - 10px));
   }
 
   20%,
@@ -998,6 +1000,8 @@ img {
   60%,
   80% {
     transform: translateX(calc(-50% + 10px));
+    transform: translate(-moz-calc(-50% + 10px));
+    transform: translate(-webkit-calc(-50% + 10px));
   }
 }
 .modal-close {
