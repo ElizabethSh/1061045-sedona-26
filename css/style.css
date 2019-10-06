@@ -287,7 +287,8 @@ img {
   margin: 0;
 }
 
-/*BOOKING*/
+                    /*BOOKING*/
+
 .booking .booking-header {
   font-size: 30px;
   line-height: 36px;
@@ -296,7 +297,7 @@ img {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .booking .booking-desc {
@@ -304,7 +305,7 @@ img {
   text-align: center;
   width: 450px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 
 .booking .button {
@@ -331,7 +332,7 @@ img {
   width: 570px;
   min-height: 395px;
   margin: 0 auto;
-  padding: 45px 56px 55px;
+  padding: 47px 56px 55px;
 
   box-sizing: border-box;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -347,11 +348,12 @@ img {
 
 .booking-item {
   margin: 0;
-  padding: 0;
-  margin-bottom: 5px;
+  padding: 3px;
+  margin-bottom: 9px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 38px;
 }
 
 .booking-item:nth-child(1),
@@ -360,12 +362,11 @@ img {
 }
 
 .booking-item:nth-child(3) {
-  width: 50%;                    /*???*/
+  width: 48%;
 }
 
-
 .booking-item:nth-child(4){
-  width: 40%;                    /*???*/
+  width: 38%;                    /*???*/
 }
 
 .booking-item label {
@@ -376,8 +377,7 @@ img {
 .booking-form input[type="text"] {
   box-sizing: border-box;
   width: 346px;
-  padding: 7px;
-  padding-right: 40px;
+  padding: 7px 40px 7px 15px;
 
   font: inherit;
   text-transform: inherit;
@@ -385,6 +385,12 @@ img {
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.booking-item:nth-child(3) input[type="text"],
+.booking-item:nth-child(4) input[type="text"] {
+  padding-right: 15px;
+  text-align: center;
 }
 
 .booking-item input:hover {
@@ -405,6 +411,7 @@ img {
   width: 100%;
   padding-top: 6px;
   padding-bottom: 9px;
+  margin-top: 25px;
 }
 
 .contacts p {
@@ -975,7 +982,7 @@ img {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 
   10%,
@@ -983,14 +990,14 @@ img {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(calc(-50% - 10px));
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(calc(-50% + 10px));
   }
 }
 .modal-close {
