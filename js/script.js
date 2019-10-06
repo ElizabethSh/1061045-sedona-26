@@ -23,6 +23,8 @@ button.addEventListener("click", function(evt) {
 
 popup.addEventListener("submit", function(evt) {
   if (!checkInDate.value || !checkOutDate.value || !adultsAmount.value || !childrenAmount.value) {
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
     evt.preventDefault();
     popup.classList.add("modal-error");
   } else {
