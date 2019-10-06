@@ -21,6 +21,8 @@ button.addEventListener("click", function(evt) {
   popup.classList.remove("modal-error");
 });
 
+
+
 popup.addEventListener("submit", function(evt) {
   if (!checkInDate.value || !checkOutDate.value || !adultsAmount.value || !childrenAmount.value) {
     popup.classList.remove("modal-error");
