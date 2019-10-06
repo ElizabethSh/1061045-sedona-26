@@ -17,7 +17,7 @@ try {
 
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup.classList.add("modal-close");
+  popup.classList.toggle("modal-close");
   popup.classList.remove("modal-error");
 });
 
