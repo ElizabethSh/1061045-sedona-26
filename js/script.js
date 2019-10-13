@@ -11,6 +11,7 @@ var storage = "";
 
 try {
   storage = localStorage.getItem("adultsAmount");
+  storage = localStorage.getItem("childrenAmount");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -23,8 +24,6 @@ button.addEventListener("click", function(evt) {
 }
 });
 
-
-
 popup.addEventListener("submit", function(evt) {
   if (!checkInDate.value || !checkOutDate.value || !adultsAmount.value || !childrenAmount.value) {
     popup.classList.remove("modal-error");
@@ -34,6 +33,7 @@ popup.addEventListener("submit", function(evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("adultsAmount", adultsAmount.value);
+      localStorage.setItem("childrenAmount", childrenAmount.value);
     }
   }
 });
