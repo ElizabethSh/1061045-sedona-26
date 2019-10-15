@@ -2,7 +2,7 @@ body {
   padding: 0;
   min-width: 1200px;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -348,6 +348,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  z-index: 3;
 }
 
 .booking-item {
@@ -495,9 +496,25 @@ img {
 
       /*CONTACTS*/
 
+.contacts {
+  position: relative;
+  height: 593px;
+}
+
 .contacts p {
   margin: 0;
-  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.contacts iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
       /*FILTER*/
@@ -940,6 +957,7 @@ img {
   bottom: 0;
   transform: translate(-50%);
   padding-top: 5px;
+  z-index: 2;
 }
 
 .footer-link {
