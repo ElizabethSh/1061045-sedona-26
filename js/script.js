@@ -9,6 +9,10 @@ var childrenAmount = popup.querySelector("[name=children-amount]");
 var isStorageSupport = true;
 var storage = "";
 
+document.addEventListener("DOMContentLoaded", function(evt) {
+  popup.classList.add("modal-close");
+});
+
 try {
   storage = localStorage.getItem("adultsAmount");
   storage = localStorage.getItem("childrenAmount");
@@ -20,8 +24,8 @@ button.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-close");
   if (popup.classList.contains('modal-close')) {
-  popup.classList.remove("modal-error");
-}
+    popup.classList.remove("modal-error");
+  }
 });
 
 popup.addEventListener("submit", function(evt) {
@@ -35,5 +39,13 @@ popup.addEventListener("submit", function(evt) {
       localStorage.setItem("adultsAmount", adultsAmount.value);
       localStorage.setItem("childrenAmount", childrenAmount.value);
     }
+  }
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    popup.classList.add("modal-close");
+    popup.classList.remove("modal-error");
   }
 });
