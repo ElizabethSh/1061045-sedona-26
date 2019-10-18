@@ -22,9 +22,11 @@ try {
 
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
+  popup.classList.toggle("show");
   popup.classList.toggle("modal-close");
   if (popup.classList.contains('modal-close')) {
     popup.classList.remove("modal-error");
+    popup.classList.remove("show");
   }
 });
 
@@ -33,6 +35,7 @@ popup.addEventListener("submit", function(evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     evt.preventDefault();
+    popup.classList.remove("show");
     popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
@@ -47,5 +50,6 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     popup.classList.add("modal-close");
     popup.classList.remove("modal-error");
+    popup.classList.remove("show");
   }
 });
