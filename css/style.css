@@ -325,6 +325,8 @@ img {
   width: 570px;
   min-height: 86px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -346,6 +348,7 @@ img {
   transform: translate(-50%);
   z-index: 3;
   visibility: visible;
+  transform-origin: 100% 100%;
 }
 
 .booking-item {
@@ -1039,7 +1042,24 @@ img {
 .copyright-link:active path {
   fill: #bdbbbc;
 }
-                /*MODAL*/
+
+                          /*MODAL*/
+
+@keyframes arise {
+  0% {
+    transition: transform ease;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
 
 @keyframes shake {
 
@@ -1069,7 +1089,11 @@ img {
 }
 
 .modal-close {
-  display: none;
+  visibility: hidden;
+}
+
+.show {
+  animation: arise 2s;
 }
 
 .modal-error {
